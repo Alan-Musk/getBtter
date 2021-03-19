@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电子产品调查问卷</title>
+</head>
+<body>
+    <h1>American Metric电子产品调查问卷</h1>
+    <form action="" method="POST">
+        <!-- 姓名 -->
+        <p>
+            <label for="name">姓名</label>
+            <input required type="text" name="" id="name"  placeholder="输入必须是2-6位字符">
+        </p>
+        <!-- 购买日期 -->
+        <p>
+            <label for="year">购买日期</label>
+            <input type="text" name="" id="year" required>年
+            <select name="moon" id="time" required>
+                <option value="1">一</option>
+                <option value="2">二</option>
+                <option value="3">三</option>
+                <option value="4">四</option>
+                <option value="5">五</option>
+                <option value="6">六</option>
+                <option value="7">七</option>
+                <option value="8">八</option>
+                <option value="9">九</option>
+                <option value="10">十</option>
+                <option value="11">十一</option>
+                <option value="12">十二</option>
+            </select>月
+            <select name="day" id="" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+            </select>
+       
+        </p>
+        <!-- 电子邮箱 -->
+        <p>
+            <label for="email">电子邮箱地址</label>
+            <input type="email" name="" id="email" required placeholder="www.baidu.com">
+        </p>
+        <!-- 手机号码 -->
+        <p>
+            <label for="phone">手机号码</label>
+            <input required type="text" name="phone" id="phone" placeholder="电话长度为11位，以13|5|7|8开头">
+        </p>
+        <!-- 看过产品目录? -->
+        <p>
+            您是否看过我们的在线产品目录?
+            <input type="radio" name="gender" id="male" checked>
+            <label for="male">是</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">否</label>
+        </p>
+        <!-- 多选框 -->
+        <p>
+            如果查看过,您对那些产品有兴趣购买?(选择提供的产品)
+            <input type="checkbox" name="" id="TV">
+            <label for="TV">大屏幕电视机</label>
+            <input type="checkbox" name="" id="audio">
+            <label for="audio">音频设备</label>
+            <input type="checkbox" name="" id="video">
+            <label for="video">视频设备</label>
+            <input type="checkbox" name="" id="photo">
+            <label for="photo">相机</label>
+        </p>
+        <!-- textarea -->
+        <p>
+            <label for="text">在填写订单之前,您还有什么问题,意见或建议</label>
+            <textarea name="" id="text" cols="30" rows="10" required>您的输入:</textarea>
+        </p>
+         <!-- 按钮 -->
+         <input type="submit" value="提交">
+         <input type="reset" value="重置" disabled name="" id="">
+    </form>
+</body>
+</html>

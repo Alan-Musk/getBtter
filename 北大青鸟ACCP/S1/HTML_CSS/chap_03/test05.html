@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ验证注册</title>
+</head>
+<body>
+    <header>
+        <a href=""><img src="img/bg_chs.png" alt=""></a>
+    </header>
+    <section>
+        <h1>注册账号</h1>
+        <form action="#" method="POST">
+            <p>
+                <label for="name">昵称</label>
+                <input required type="text" name="" id="name" pattern="[-\w\u4E00-\u9FA5]{4,10}">长度为4-10个字符
+            </p>
+            <p>
+                <label for="pw">密码</label>
+                <input required type="password" name="" id="pw" pattern="[\dA-Za-z]{6,16}">长度为6-16个字符
+            </p>
+            <p>
+                <label for="pwa">确认密码</label>
+                <input required type="password" name="" id="pwa" pattern="[\dA-Za-z]{6,16}">长度为6-16个字符
+            </p>
+            <p>
+                <label for="phone">手机号码</label>
+                <input required type="text" name="phone" id="phone" pattern="1[3578]\d{9}">电话长度为11位，以13|5|7|8开头
+            </p>
+            <p>
+                <label for="email">邮箱</label>
+                <input required type="email" name="" id="email">
+            </p>
+            <p>
+                <label for="age">年龄</label>
+                <input required type="text" name="" id="age" pattern="\d|[1-9]\d|1[0-2]\d">
+            </p>
+            <input src="img/btn.bmp" type="image"/>
+        </form>
+    </section>
+</body>
+</html>

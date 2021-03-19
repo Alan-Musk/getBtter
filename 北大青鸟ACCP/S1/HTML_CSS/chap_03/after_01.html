@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>申请表</title>
+</head>
+<body>
+    <h1>申请表</h1>
+    <form action="" method="POST">
+        <p>
+            <label for="name">姓名</label>
+            <input type="text" name="" id="name">
+        </p>
+        <p>
+            教育程度:
+            <input type="radio" name="xueli" id="shuoshi" checked>
+            <label for="shuoshi">硕士</label>
+            <input type="radio" name="xueli" id="boshi">
+            <label for="boshi">博士</label>
+        </p>
+        <p>
+            <label for="email">常用邮箱</label>
+            <input type="email" name="" id="email">
+        </p>
+        <p>
+            性别:
+            <input type="radio" name="gender" id="male">
+            <label for="male">男</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">女</label>
+        </p>
+        <p>
+            <label for="age">年龄:</label>
+            <input type="text" name="" id="age">
+        </p>
+        <p>
+            <label for="money">月薪:</label>
+            <input type="text" name="" id="money">
+        </p>
+        <p>
+            <label for="icons">附注:</label>
+            <textarea name="" id="icons" cols="30" rows="10">请在这里备注</textarea>
+        </p>
+        <p>
+            <label for="bmon">国籍</label>
+            <select name="bmon" id="bmon">
+                <option value="澳大利亚" selected>澳大利亚</option>
+                <option value="美国">美国</option>
+                <option value="日本">日本</option>
+                <option value="新加坡">新加坡</option>
+            </select>
+        </p>
+        <!-- 按钮 -->
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重置" name="" id="">
+    </form>
+</body>
+</html>
