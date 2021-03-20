@@ -1,0 +1,26 @@
+p{
+    font-size: 16px;
+}
+header a{
+    font-size: 14px;
+    color: #f10158;
+}
+input[type=text]{
+    background-color: #FFFFED;
+    font-size: 18px;
+}
+input[type*=pass]{
+    background-color: #FFFFED;
+    font-size: 18px;
+}
+section img:nth-of-type(1){
+    width: 200px;
+    height: 150px;
+}
+section li{
+    color: #0099FF;
+}
+footer a{
+    font-size: 14px;
+    color: #9873F2;
+}
