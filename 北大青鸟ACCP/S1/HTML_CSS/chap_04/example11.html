@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3属性选择器的使用</title>
+    <style>
+        .demo a{
+            float: left;
+            display: block;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            text-align: center;
+            background: #AAC;
+            color: blue;
+            font: bold 20px/50px Arial;
+            margin-right: 5px;
+            text-decoration: none;
+            margin: 5px;
+        }
+        a[id=first]{
+            background: red;
+        }
+        a[class*=links]{background: pink;}
+        a[href^=http]{background: blue;}
+        a[href$=png]{background: black;}
+    </style>
+</head>
+<body>
+    <p class="demo">
+        <a href="http://www.baidu.com" class="links item first" id="first">1</a>
+        <a href="" class="links active item" title="test website" target="_blank" >2</a>
+        <a href="sites/file/test.html" class="links item">3</a>
+        <a href="sites/file/test.png" class="links item">4</a>
+        <a href="sites/file/image.jpg" class="links item">5</a>
+        <a href="efc" class="links item" title="website link">6</a>
+        <a href="/a.pdf" class="links item">7</a>
+        <a href="/abc.pdf" class="links item">8</a>
+        <a href="abcdef.doc" class="links item">9</a>
+        <a href="abd.doc" class="linksitem last" id="last">10</a>
+
+
+    </p>
+</body>
+</html>

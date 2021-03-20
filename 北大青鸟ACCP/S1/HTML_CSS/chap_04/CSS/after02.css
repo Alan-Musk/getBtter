@@ -1,0 +1,23 @@
+h2{
+    font-size: 18px;
+}
+#first{
+    color: red;
+}
+#second{
+    color: green;
+}
+p{
+    font-size: 14px;
+}
+.img{
+    width: 300px;
+    height: 200px;
+}
+p:last-of-type{
+    color: blue;
+}
+li{
+    font-size: 14px;
+    color: #640000;
+}
