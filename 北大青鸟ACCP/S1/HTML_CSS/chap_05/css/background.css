@@ -1,0 +1,12 @@
+#nav{
+    width: 230px;
+    background-color: #d7d7d7;
+}
+.title{
+    background-color: #c00;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    text-indent: 1em;
+    line-height: 35px;
+}

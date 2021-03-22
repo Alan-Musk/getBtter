@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(to bottom,#ececec,#ffffed);
+}
+h1{
+    color: white;
+    background-color: #2D8EB6;
+}
+.tese{
+    background-color: #578F15;
+    width: 300px;
+}
+.linian{
+    background-color:#E86221;
+    width: 300px;
+}
+
+.top{
+    color: #5c9815;
+}
+.bottom{
+    color: #f26522;
+}
+span{
+    color: white;
+}
