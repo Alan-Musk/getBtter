@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.box{
+    width: 300px;
+    border: 1px solid #AACCEE;
+    margin: 0 auto;
+    background-color: #F5F9FC;
+}
+li{
+    border-top: 1px solid #AACCEE;
+    list-style: none;
+    margin:10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+.title{
+    margin-left: 5px;
+    margin-top: 10px;
+}
