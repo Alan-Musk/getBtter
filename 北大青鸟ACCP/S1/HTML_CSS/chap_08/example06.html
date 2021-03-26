@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li{
+            padding: 0px;
+            margin: 0px;
+            list-style-type: none;
+        }
+        #content{
+            /* 设置外层<div>的宽度,边框样式 */
+            width: 331px;
+            overflow: hidden;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+            border: 1px #999 solid;
+        }
+        #content ul{
+            /* 设置父级的相对定位 */
+            position: relative;
+        }
+        .tipBg, .tipTest{
+            /* 设置文本层和透明层的绝对定位,宽度,高度和向下偏移量 */
+            position: absolute;
+            width: 331px;
+            height: 25px;
+            top: 100px;
+        }
+        .tipTest{
+            /* 设置文本样式 */
+            color: #FFF;
+            text-align: center;
+            z-index: 1;
+        }
+        .tipBg{
+            /* 设置透明层 */
+            background: #000;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <ul>
+            <li><img src="img/adver-01.jpg" alt=""></li>
+            <li class="tipTest">京秋魅力&#8226;相约共赏香山红叶</li>
+            <li class="tipBg"></li>
+            <li>时间:11月16日 星期六 8:30</li>
+            <li>地点:朝阳区西大望路珠江帝景K区正满口集合</li>
+        </ul>
+    </div>
+</body>
+</html>

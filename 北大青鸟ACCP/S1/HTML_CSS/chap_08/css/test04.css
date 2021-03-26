@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1284px;
+    margin: 0 auto;
+    font-family: Verdana,"宋体";
+    font-size: 12px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* 最顶部 */
+.header{
+    position: relative;
+}
+.hd{
+    background-color: #EAFFFA;
+    border: 1px #D8F5EE solid;
+    float: right;
+    position: absolute;
+    left: 900px;
+    top: 28px;
+}
+.hd_a{
+    margin: 8px;
+    color: #848686;
+}
+.header img:nth-of-type(2){
+    position: absolute;
+    left: 910px;
+    top: 15px;
+    z-index: 1;
+}
+/* 导航 */
+.nav{
+    background-color: #FE6916;
+    height: 50px;
+    line-height: 50px;
+}
+.nav a{
+    margin-left: 36px;
+    font-size: 16px;
+}
+.nav a:hover{
+    text-decoration: underline;
+}
+/* 图书榜 */
+.nav_bottom img{
+    width: 100%;
+}
+/* 畅销榜 */
+.changxiao{
+    border: 1px solid #C4E69E;
+    position: relative;
+    height: 350px;
+}
+.changxiao ul{
+    list-style: none;
+}
+.changxiao img:nth-of-type(1){
+    position: absolute;
+    top: 10px;
+}
+.changxiao img:nth-of-type(2){
+    position: absolute;
+    top: 70px;
+}
+.changxiao img:nth-of-type(3){
+    position: absolute;
+    top: 70px;
+    left: 750px;
+}
+.changxiao img:nth-of-type(4){
+    position: absolute;
+    top: 200px;
+    left: 750px;
+}
+.changxiao img:nth-of-type(5){
+    position: absolute;
+    left: 20px;
+    top: 70px;
+}
+.changxiao img:nth-of-type(6){
+    position: absolute;
+    top: 70px;
+    left: 750px;
+}
+.changxiao img:nth-of-type(7){
+    position: absolute;
+    top: 200px;
+    left: 750px;
+}
+.name{
+    font-size: 16px;
+    color: #4574B8;
+}
+.money{
+    color: #943A47;
+    font-weight: bold;
+}
+.first{
+    margin-top: 10px;
+    position: absolute;
+    left: 260px;
+    top: 30px;
+}
+.second{
+    margin-top: 10px;
+    position: absolute;
+    left: 850px;
+    top: 30px;
+}
+.third{
+    margin-top: 10px;
+    position: absolute;
+    left: 850px;
+    top: 200px;
+}
+/* 底部 */
+footer{
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+footer a{
+    color: #757575;
+}
+footer img{
+    position: absolute;
+    left: 605px;
+    top: -11px;
+}
