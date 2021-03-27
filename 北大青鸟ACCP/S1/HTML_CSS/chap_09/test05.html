@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QQ彩贝导航</title>
+    <link rel="stylesheet" href="css/test05.css">
+    <style>
+        /* 赚积分动画 */
+        @keyframes spread{
+    0%{width: 0;}
+    33%{width: 23px;}
+    66%{width: 46px;}
+    100%{width: 69px;}
+}
+a:hover .icon1{
+    animation: spread 0.3s linear both;
+    background: url("img/header_05.png") 0 0 no-repeat;
+}
+a:hover .icon2{
+    animation: spread 0.3s linear both;
+    background: url("img/header_09.png") 0 0 no-repeat;
+}
+/* 旋转动画 */
+.an img:nth-of-type(1){
+    background: url("img/iconsB_11.gif") 0 0 no-repeat;
+}
+.an img:nth-of-type(1):hover{
+    transform: rotate(360deg);
+}
+.an img{
+    transition: all 0.3s linear;
+}
+    </style>
+</head>
+<body>
+    <header style="background: linear-gradient(to bottom,white,#EDEDED);">
+        <img src="img/logo_170x46.png" alt="" class="logo">
+        <nav class="tioCenter">
+            <ul class="clear">
+                <li>
+                    <a href="">
+                        <span class="icon1"><img src="img/header_03.png" alt=""></span>
+                        返回商城
+                    </a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="">商旅频道</a>
+                </li>
+                <li>|</li>
+                <li>
+                    <a href="">
+                        <span class="icon2"><img src="img/header_07.png" alt=""></span>
+                        积分商城
+                    </a>
+                </li>
+                <li>|</li>
+                <li><a href="">商旅频道</a></li>
+                <li>|</li>
+                <li><a href="">了解彩贝</a></li>
+
+            </ul>
+        </nav>
+        <div class="an">
+            <img src="img/iconsB_11.gif" alt="">
+            <img src="img/iconsB_12.gif" alt="">
+            <img src="img/iconsB_13.png" alt="">
+        </div>
+    </header>
+</body>
+</html>
