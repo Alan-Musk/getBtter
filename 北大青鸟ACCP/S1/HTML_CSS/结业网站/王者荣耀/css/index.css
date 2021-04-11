@@ -1,0 +1,8 @@
+a{
+    color: #008c8c;
+    font: italic bold 40px/3 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
