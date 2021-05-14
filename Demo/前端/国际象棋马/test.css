@@ -1,0 +1,113 @@
+body{
+    background-color: #34344a;
+}
+div{
+    position: absolute;
+    background-color: #c5d3d2;
+}
+.all{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    /* 位移 */
+    transform: translateX(-50%)translateY(-50%);
+}
+.head{
+    /* 找到位置 */
+    /* background-color: red; */
+    /* 设置圆角边框 */
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    top: 62.5px;
+    left: 115px;
+}
+.face{
+    /* 找到位置 */
+    /* background-color: blue; */
+    width: 110px;
+    height: 50px;
+    /* 旋转 */
+    transform: rotate(-30deg);
+    top: 115px;
+    left: 35px;
+    border-radius: 20% 0% 0% 20%;
+}
+.throat{
+    /* 找到位置 */
+    /* background-color: red; */
+    width: 100px;
+    height: 75px;
+    border-radius: 100%;
+    top: 100px;
+    left: 80px;
+}
+.ear{
+    /* 找到位置 */
+    /* background-color: red; */
+    width: 30px;
+    height: 40px;
+    border: 5px solid #34344a;
+    border-bottom-width: 0px;
+    top: 22px;
+    left: 165px;
+    /* 语义化 边框-上-右-圆角 */
+    border-top-right-radius: 100%;
+}
+.hair{
+    /* background-color: red; */
+    width: 100px;
+    height: 150px;
+    border-radius: 30% 70% 0% 0% / 5% 50% 0% 0%;
+    /* 将背景颜色设置透明 */
+    background-color: transparent;
+    border-top: 20px solid #c5d3d2;
+    border-right: 20px solid #c5d3d2;
+    top: 38px;
+    left: 147px;
+}
+.back{
+    /* background-color: red; */
+    width: 100px;
+    height: 175px;
+    left: 140px;
+    top: 125px;
+}
+.belly{
+    /* background-color: red; */
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-top: 122.5px solid transparent;
+    border-right: 50px solid #C5d3d2;
+    top: 177.5px;
+    left: 91px;
+}
+.base-1{
+    /* background-color: red; */
+    width: 150px;
+    height: 20px;
+    top: 310px;
+    left: 90px;
+    /* 圆角边框 */
+    border-radius: 5% 5% 5% 5% ;
+}
+.base-2{
+    /* background-color: red; */
+    height: 0;
+    width: 150px;
+    top: 338px;
+    left: 75px;
+    background-color: transparent;
+    border-bottom: 20px solid #c5d3d2;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.base-3{
+    width: 180px;
+    height: 20px;
+    top: 365px;
+    left: 75px;
+}
