@@ -1,8 +1,60 @@
-a{
-    color: #008c8c;
-    font: italic bold 40px/3 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
-    text-decoration: none;
+body{
+    font: 14px/1.5 "Microsoft YaHei",Tahoma,"simsun",sans-serif;
+    color: #323235;
+    min-width: 1280px;
+    /* 设置背景图片 */
+    background: url("../img/bg.jpg");
+    /* 背景图位置,横向中心对齐,纵向顶端对齐 */
+    background-position: center top;
 }
-a:hover{
-    text-decoration: underline;
+.fl{
+    float: left;
+}
+/* 头部 */
+.header{
+    height: 84px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #c9c9dd;
+}
+.header .main-nav{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+.header .logo a{
+    width: 200px;
+    height: 54px;
+    background: url("../img/logo.png");
+    display: block;
+    margin-top: 16px;
+    text-indent: -999px;
+}
+.header .menu{
+    height: 100%;
+    margin-left: 36px;
+}
+.header .menu li{
+    float: left;
+    width: 110px;
+    /* 文字居中 */
+    text-align: center;
+    /* 行高 */
+    line-height: 30px;
+    font-size: 18px;
+    height: 100%;
+}
+.header .menu li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.header .menu li span{
+    display: block;
+    font-size: 12px;
+}
+.header .menu li.active, .header .menu li:hover{
+    color: #e4b653;
+    background: url("../img/spr_block.png");
 }
