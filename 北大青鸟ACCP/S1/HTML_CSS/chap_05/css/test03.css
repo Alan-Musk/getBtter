@@ -27,7 +27,6 @@ p{
     color: red;
 }
 img{
-    margin-left: auto; 
-    margin-right:auto; 
+    margin: 0 auto;
     display:block;
 }
