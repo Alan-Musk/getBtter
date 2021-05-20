@@ -57,8 +57,6 @@ body {
 }
 
 .header .main-nav {
-    width: 1200px;
-    margin: 0 auto;
     height: 100%;
 }
 
@@ -106,13 +104,13 @@ body {
     background: url("../img/spr_block.png");
 }
 
-.header .login{
-    margin-left: 42px;
+.header .login {
     margin-top: 21px;
     /* cursor CSS属性定义鼠标指针悬浮在元素上方显示的鼠标光标 */
     cursor: pointer;
 }
-.header .login img{
+
+.header .login img {
     width: 44px;
     height: 44px;
     border: 1px solid #d9ad50;
@@ -120,23 +118,28 @@ body {
     box-sizing: border-box;
     border-radius: 22px;
 }
-.header .login div{
+
+.header .login div {
     margin-left: 10px;
 }
-.header .login .welcome{
+
+.header .login .welcome {
     font-size: 16px;
     color: #fff;
 }
-.header .login .description{
+
+.header .login .description {
     font-size: 14px;
     display: block;
     color: #858792;
 }
+
 /* 二级导航 */
-.header:hover .sub-nav{
+.header:hover .sub-nav {
     height: 285px;
 }
-.header .sub-nav{
+
+.header .sub-nav {
     height: 285px;
     background: rgba(0, 0, 0, 0.7);
     height: 0;
@@ -145,86 +148,102 @@ body {
     /* 让该元素的css变化，在0.3秒内完成，而不是瞬间完成 */
     transition: 0.3s;
 }
-.header .sub-nav .menus{
+
+.header .sub-nav .menus {
     margin-left: 346px;
     line-height: 30px;
     /* CSS属性定义行內内容(例如文字)如何相对它的块父元素对齐。 */
     text-align: center;
     padding-top: 15px;
 }
-.header .sub-nav .menus li{
+
+.header .sub-nav .menus li {
     float: left;
     width: 110px;
 }
-.header .sub-nav .menus li a{
+
+.header .sub-nav .menus li a {
     display: block;
     /* white-space CSS 属性是用来设置如何处理元素中的 空白。 */
     /* 强制不换行 */
     white-space: nowrap;
 }
-.header .sub-nav .menus li a:hover{
+
+.header .sub-nav .menus li a:hover {
     color: #f3c258;
     text-decoration-line: underline;
 }
+
 /* 专题 */
-.subject{
+.subject {
     margin-top: 6px;
     margin-bottom: 6px;
     height: 440px;
     display: block;
 }
+
 /* 主区域 */
-.main{
+.main {
     height: 342px;
     /* no-repeat 不重复背景 */
     background: url("../img/rotate_bg.png") no-repeat;
     color: #b1b2be;
 }
-.download-area{
+
+.download-area {
     float: right;
     width: 236px;
     height: 100%;
 }
-.download-area .download{
+
+.download-area .download {
     width: 236px;
     height: 128px;
     background-position: 0 -219px;
 }
-.download-area .vs{
+
+.download-area .vs {
     width: 236px;
     height: 106px;
     background-position: 0 -350px;
 }
-.download-area .exp{
+
+.download-area .exp {
     width: 236px;
     height: 108px;
     background-position: 0 -461px;
 }
-.main .banner-container{
+
+.main .banner-container {
     width: 604px;
     height: 100%;
     overflow: hidden;
 }
-.main .banner-img{
+
+.main .banner-img {
     width: 500%;
     height: 298px;
     transition: 0.3s;
 }
-.main .banner-img li{
+
+.main .banner-img li {
     float: left;
     width: 604px;
     height: 298px;
 }
+
 .main .banner-img li a,
-.main .banner-img li img{
+.main .banner-img li img {
     display: block;
     width: 100%;
     height: 100%;
 }
-.banner-title{
+
+.banner-title {
     height: 44px;
 }
-.banner-title li{
+
+.banner-title li {
     height: 44px;
     float: left;
     width: 20%;
@@ -233,47 +252,57 @@ body {
     /* cursor CSS属性定义鼠标指针悬浮在元素上方显示的鼠标光标。 */
     cursor: pointer;
 }
-.banner-title li.active{
+
+.banner-title li.active {
     color: #f3c258;
     background: rgba(255, 255, 255, 0.15);
 }
-.news-container{
+
+.news-container {
     width: 325px;
     height: 342px;
     padding: 0 17px;
 }
-.news-container .title-container{
+
+.news-container .title-container {
     height: 49px;
     border-bottom: 1px solid #000;
 }
-.news-container .title-container li{
+
+.news-container .title-container li {
     float: left;
     width: 52px;
     line-height: 49px;
     text-align: center;
     cursor: pointer;
 }
-.news-container .news-banner{
+
+.news-container .news-banner {
     margin-top: 2px;
     overflow: hidden;
 }
-.news-container .title-container li.active{
+
+.news-container .title-container li.active {
     border-bottom: 3px solid #f3c258;
     color: #f3c258;
 }
-.news-container .news-blocks{
+
+.news-container .news-blocks {
     width: 500%;
     transition: 0.3s;
 }
-.news-container .news-blocks .newslist{
+
+.news-container .news-blocks .newslist {
     float: left;
     width: 325px;
 }
-.news-container .newslist li{
+
+.news-container .newslist li {
     margin-bottom: 11px;
     overflow: hidden;
 }
-.news-container .newslist li a{
+
+.news-container .newslist li a {
     float: left;
     width: 270px;
     overflow: hidden;
@@ -284,11 +313,12 @@ body {
     text-overflow: ellipsis;
 }
 
-.news-container .newslist li span{
+.news-container .newslist li span {
     float: right;
 }
+
 /* :first-child 选中第一个元素 */
-.news-container .newslist li:first-child{
+.news-container .newslist li:first-child {
     width: 294px;
     height: 36px;
     line-height: 36px;
@@ -299,8 +329,184 @@ body {
     background: #414046;
     font-size: 18px;
 }
-.news-container .newslist li:first-child a{
+
+.news-container .newslist li:first-child a {
     display: block;
+    /* 不再浮动 */
     float: none;
     width: 100%;
+}
+
+/* 广告区域 */
+.adv {
+    margin-top: 28px;
+    margin-bottom: 34px;
+    height: 134px;
+}
+
+.adv a {
+    float: left;
+    width: 291px;
+    height: 134px;
+    margin-right: 12px;
+    overflow: hidden;
+}
+
+.adv a:last-child {
+    margin-right: 0;
+}
+
+.adv a img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.adv a img:hover {
+    transform: scale(1.1);
+}
+
+/* 页脚 */
+.footer {
+    height: 362px;
+    background: url("../img/bg_footer.jpg");
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+.footer .footer-logo a {
+    background: url("../img/spr.png");
+    width: 285px;
+    height: 64px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer .footer-links {
+    margin-top: 12px;
+    font-size: 12px;
+    columns: #666;
+}
+
+.footer .footer-links p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.footer .footer-links .footer-left-links span {
+    margin-right: 12px;
+}
+
+.footer .footer-links .footer-left-links {
+    width: 525px;
+}
+
+.footer .footer-links .footer-right-links {
+    width: 630px;
+}
+
+/* 悬浮妲己 */
+.right-nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    margin-top: -247px;
+    width: 254px;
+    height: 494px;
+    background: url("../img/r_navBg.png");
+}
+
+.right-nav .hero {
+    background: url("../img/r_dj.png");
+    width: 165px;
+    height: 154px;
+    position: absolute;
+    top: 15px;
+    left: 24px;
+}
+
+.right-nav .hero a {
+    position: absolute;
+    top: 37px;
+    left: 12px;
+    width: 88px;
+    color: #62401b;
+    font-weight: bold;
+}
+
+.right-nav .menus {
+    position: absolute;
+    top: 160px;
+    width: 117px;
+    left: 85px;
+}
+
+.right-nav .menus li:first-child img {
+    width: 117px;
+    height: 117px;
+    border: 3px solid #f3c258;
+    box-sizing: border-box;
+    display: block;
+}
+
+.right-nav .menus li .weibo {
+    background: url("../img/spr2.png") no-repeat -122px -120px;
+    width: 117px;
+    height: 38px;
+    display: block;
+}
+
+.right-nav .menus li .weibo:hover {
+    background-position: -122px -240px;
+}
+/* 微信部分 */
+.right-nav .menus li .weixin{
+    background: url("../img/spr2.png") no-repeat -122px -160px;
+    width: 117px;
+    height: 38px;
+    display: block;
+}
+.right-nav .menus li .weixin:hover{
+    background-position: -122px -200px;
+}
+
+.right-nav .menus li .master {
+    background: url("../img/spr2.png") no-repeat -122px -417px;
+    width: 117px;
+    height: 38px;
+    display: block;
+}
+
+.right-nav .menus li .master:hover {
+    background-position: -122px -458px;
+}
+
+.right-nav .menus li {
+    position: relative;
+    overflow: hidden;
+}
+
+.right-nav .menus li:hover {
+    overflow: visible;
+}
+
+.right-nav .menus li .sub-menu {
+    position: absolute;
+    width: 115px;
+    height: 144px;
+    left: -115px;
+    top: -66px;
+    text-align: center;
+    color: #dcdcdc;
+    font-size: 12px;
+    padding-top: 8px;
+    background: url("../img/spr2.png") no-repeat 0 -416px;
+}
+
+.right-nav .menus li .sub-menu span {
+    color: #cd974c;
+}
+
+.right-nav .menus li .sub-menu img{
+    width: 100px;
 }
