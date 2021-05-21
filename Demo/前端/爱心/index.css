@@ -1,0 +1,38 @@
+body{
+    font-size: 62.5%;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238, 232, 232);
+    display: flex;
+    /* 属性定义了浏览器如何分配顺着父容器主轴的弹性元素之间及其周围的空间。 */
+    /* 居中排列 */
+    justify-content: center;
+    /* 将所有直接子节点上的align-self值设置为一个组。 align-self属性设置项目在其包含块中在交叉轴方向上的对齐方式。 */
+    align-items: center;
+}
+div{
+    /* 1rem=10px */
+    width: 10rem;
+    height: 10rem;
+    background: rgb(255, 78, 78);
+    position: relative;
+    transform: rotate(45deg);
+    box-shadow: -90px 20px 25px rgb(136, 84, 68);
+}
+div::before,div::after{
+    content: "";
+    width: 10rem;
+    height: 10rem;
+    /* 透明 */
+    background: inherit;
+    /* 设置absolute会继承relative的背景属性,所以不是透明 */
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: inherit;
+}
+div::before{
+    bottom: 50%;
+}
+div::after{
+    left: -50%;
+}
