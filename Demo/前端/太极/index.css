@@ -1,0 +1,42 @@
+*{
+    /* 不算边框 */
+    box-sizing: border-box;
+}
+body{
+    font-size: 62.5%;
+    width: 100vm;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    width: 20rem;
+    height: 20rem;
+    background: rgb(255, 255, 255);
+    /* 于创建一个表示两种或多种颜色线性渐变的图片 */
+    background: linear-gradient(90deg,rgba(255,255,255,1)0%,
+    rgba(255,255,244,1)50%,rgba(0,0,0,1)50%,
+    rgba(0,0,0,1)100%);
+    border: 0.4rem solid black;
+    position: relative;
+    border-radius: 50%;
+}
+div::before,div::after{
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    /* 平移 */
+    transform: translateX(50%);
+}
+div::before{
+    background: black;
+    border: 4rem solid white;
+}
+div::after{
+    background: white;
+    border: 4rem solid black;
+    bottom: 0%;
+}
