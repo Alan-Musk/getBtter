@@ -1,40 +1,43 @@
 @import "https://at.alicdn.com/t/font_1213967_ldkyd4k7rg.css";
 /* 多页面共享的CSS代码 */
 
-body{
+body {
     font-family: Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
-.left{
+.left {
     float: left;
 }
-.right{
+
+.right {
     float: right;
 }
-.clearfix::after{
+
+.clearfix::after {
     content: "";
     display: block;
-    /* 元素被向下移动用于清除之前的左右浮动。 */
     clear: both;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
-.btn{
+
+.btn {
     background: #41ac52;
     cursor: pointer;
     color: #fff;
     text-align: center;
     border-radius: 4px;
 }
-/*:disabled 表示任何被禁用的元素 */
-.btn:disabled{
-    background: rgba(66, 189, 86, 0.5);
-    /* 不能执行 */
+
+.btn:disabled {
+    background: rgba(66, 189, 86, .5);
     cursor: not-allowed;
 }
 
 /* 评分 */
+
 .star-bg {
     display: inline-block;
     width: 55px;
