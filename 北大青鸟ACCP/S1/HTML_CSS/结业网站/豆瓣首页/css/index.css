@@ -1,0 +1,258 @@
+@import url("reset.css");
+@import url("common.css");
+
+/* 统一样式 */
+body{
+    line-height: 2;
+}
+button{
+    /* 属性定义鼠标指针悬浮在元素上方显示的鼠标光标。 */
+    cursor: pointer;
+}
+a{
+    color: #37a;
+}
+a:hover{
+    color: #fff;
+    background: #37a;
+}
+/* 匹配被用户激活的元素。它让页面能在浏览器监测到激活时给出
+反馈。当用鼠标交互时，它代表的是用户按下按键和松开按键之间的时间。 */
+a:active{
+    color: #fff;
+    background: #f93;
+}
+ul{
+    /* 指定了怎样在单词内断行。 */
+    /* 对于non-CJK (CJK 指中文/日文/韩文) 文本，可在任意字符间断行 */
+    word-break: break-all;
+}
+
+
+/* 首页通用样式 */
+.container{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.section{
+    padding: 35px 0;
+}
+/* 表示HTML表格中的偶数行。 */
+.section:nth-child(even){
+    background: #f7f7f7;
+}
+
+.aside-left{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+.aside-right{
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+.main{
+    /* 创建BFC */
+    /* BFC(块级格式化上下文) */
+    overflow: hidden;
+}
+.adv img{
+    width: 100%;
+    display: block;
+}
+.section-title{
+    margin: 12px 0;
+}
+.section-title .title{
+    display: inline;
+    color: #072;
+    font-size: 15px;
+}
+.section-title .title::after{
+    content: "......";
+}
+.section-title .link{
+    font-size: 12px;
+}
+.section-title .link::before{
+    content: "(";
+}
+.section-title .link::after{
+    content: ")";
+}
+.adv-tag::after{
+    content: "广告";
+    color: #c9c9c9;
+    font-size: 13px;
+}
+.aside-left .title{
+    font-size: 24px;
+    color: #000;
+}
+.dark-color{
+    color: #494949;
+}
+.item-list li{
+    display: inline-block;
+    /* 使元素及其后代元素的顶部与整行的顶部对齐。 */
+    vertical-align: top;
+    line-height: 1.5;
+}
+.item-list li .img img{
+    width: 100%;
+    display: block;
+}
+.left-menu{
+    font-size: 14px;
+}
+.left-menu a.new{
+    position: relative;
+}
+.left-menu a.new::after{
+    content: "";
+    background: url("../img/new_menu.gif");
+    width: 17px;
+    height: 7px;
+    position: absolute;
+    right: -20px;
+    top: 0;
+}
+.right-menu-list{
+    font-size: 12px;
+}
+.right-menu-list li{
+    float: left;
+}
+.block-link{
+    padding: 2px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.menu-adv{
+    margin-top: 20px;
+    font-size: 12px;
+}
+.app-icon-1{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg");
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+}
+.app-icon-2{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg");
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+    background-position: -250px 0;
+}
+.app-icon-3{
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: url("../img/app_icons.jpg") no-repeat;
+    box-shadow: 1px 1px 2px #999;
+    border-radius: 10px;
+    background-position: -50px 0;
+}
+
+.group .group-name a{
+    color: #333;
+}
+
+.group .group-name a::after{
+    content: ">>";
+}
+.group .right-menu-list li{
+    margin-right: 10px;
+}
+
+/* 页头开始 */
+.header{
+    height: 90px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.header .logo a{
+    width: 154px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 30px;
+    display: block;
+    background: url("../img/logo_db.png") no-repeat left top/100%;
+}
+
+.header .search{
+    width: 270px;
+    height: 30px;
+    margin-left: 20px;
+    position: relative;
+    /* 取决于用户端。桌面浏览器（包括Firefox）使用默认值， */
+    line-height: normal;
+}
+.header .search .txt{
+    width: 240px;
+    height: 20px;
+    padding:5px;
+    font-size: 13px;
+}
+.header .search .txt::placeholder{
+    color: #ccc;
+}
+.header .search button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 1px;
+    right: 20px;
+    color: #c3c3c3;
+    background: white;
+    border: none;
+}
+.header .menu{
+    margin-top: 6px;
+}
+.header .menu a{
+    background: url("../img/nav_logo.png") no-repeat left top/463px 20px;
+    width: 40px;
+    height: 20px;
+    float: left;
+    margin-left: 20px;
+}
+.header .menu .menu-read {
+    background-position: 0 0;
+}
+
+.header .menu .menu-movie {
+    background-position: -60px 0;
+}
+
+.header .menu .menu-music {
+    background-position: -120px 0;
+}
+
+.header .menu .menu-group {
+    background-position: -180px 0;
+}
+
+.header .menu .menu-city {
+    background-position: -240px 0;
+}
+
+.header .menu .menu-fm {
+    background-position: -300px 0;
+}
+
+.header .menu .menu-time {
+    background-position: -360px 0;
+}
+.header .menu .menu-doupin{
+    background-position: -420px 0;
+    width: 44px;
+}
