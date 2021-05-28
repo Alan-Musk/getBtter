@@ -1,0 +1,23 @@
+<!-- 
+author:@alan 
+name:geolocation.html
+2021年 5月 29号 02点 55分
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/alan.ico"/>
+    <link rel="bookmark" href="img/alan.ico"/>
+    <title>geolocation.html</title>
+</head>
+<body>
+    <script>
+        navigator.geolocation.getCurrentPosition(function(position){
+            document.write(position.coords.latitude+","+position.coords.longitude);
+        });
+    </script>
+</body>
+</html>
