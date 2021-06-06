@@ -1,15 +1,12 @@
 #include <stdio.h>
-//验证表达式getchar()!=EOF的值是0还是1
-int main()
-{
-    int c;
-    if (getchar()!=EOF)
-    {
-        printf("getchar()!=EOF的值是1");
-    }else{
-        printf("getchar()!=EOF的值是0");
-    }
-    
 
-    return 0;
+// 统计输入的字符数
+int main(void){
+    long nc;
+    nc=0;
+    while(getchar()!=EOF){
+        ++nc;
+        // printf("%ld\n",nc);
+    }
+    printf("%ld\n",nc);
 }

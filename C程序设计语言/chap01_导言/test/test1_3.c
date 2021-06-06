@@ -11,6 +11,7 @@ int main(void){
     step=20;//步长
 
     fahr=lower;
+    printf("    title\n");
     while(fahr<=upper){
         celsius=(5.0/9.0)*(fahr-32.0);
         printf("%3.0f\t%6.1f\t\n",fahr,celsius);

@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-int main()
-{
-    //统计输入的字符数:版本1
-    long nc;
-    nc=0;
-    while (getchar()!= EOF)
-    {
-        ++nc;
-    }
-    printf("%ld\n",nc);
+// 统计输入的行数
 
-    return 0;
+int main(void){
+    int c,nl;
+
+    nl=0;
+    while((c=getchar())!=EOF){
+        if(c=='\n'){
+            ++nl;
+            // printf("%d\n",nl);
+        }
+    }
+    printf("%d\n",nl);
 }

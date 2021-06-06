@@ -1,14 +1,10 @@
 #include <stdio.h>
 
-int main()
-{
-    //编写一个打印EOF的值的程序  我坦白没看懂题目
-    int c=getchar();
-    if (c!=EOF)
-    {
-        printf("EOF\n");
-    }
-    
+// 统计输入的字符数 版本2
+int main(void){
+    double nc;
 
-    return 0;
+    for(nc=0;getchar()!=EOF;++nc){
+    }
+    printf("%.0fn",nc);
 }

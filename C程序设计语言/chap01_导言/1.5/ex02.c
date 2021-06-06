@@ -1,13 +1,8 @@
 #include <stdio.h>
 
-int main()
-{
+int main(void){
     int c;
-    while ((c=getchar())!=EOF)
-    {
+    while((c=getchar())!=EOF){
         putchar(c);
     }
-    
-
-    return 0;
 }
