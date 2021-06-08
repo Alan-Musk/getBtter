@@ -1,30 +1,29 @@
 #include <stdio.h>
-//编写一个统计空格,制表符与换行符个数的程序
-int main()
-{
-    int space=0;//空格
-    int lt=0;//制表符
-    int c,nl;
-    nl=0;
-    while ((c=getchar())!=EOF)
-    {
+
+//在单词内
+#define IN 1
+#define OUT 0 //在单词外
+
+// 统计输入的行数,单词数与字符数
+int main(void){
+    //nl:行数 nw:单词数 nc:字符数
+    int c,nl,nw,nc,state;
+
+    state=OUT;
+    nl=nw=nc=0;
+    while((c=getchar())!=EOF){
+        ++nc;
         if(c=='\n'){
-            printf("换行符+1\n");
             ++nl;
         }
-        if(c==' '){
-            printf("空格+1\n");
-            ++space;
+        if(c==' '||c=='\n'||c=='\t'){
+            state=OUT;
+        }else if(state==OUT){
+            state=IN;
+            ++nw;
         }
-        if (c=='\t')
-        {
-            printf("制表符+1\n");
-            ++lt;
-        }
-        
-        printf("%d %d %d\n",nl,space,lt);
+        //测试用
+        // printf("%d %d %d\n",nl,nw,nc);
     }
-    
-
-    return 0;
+    printf("%d %d %d\n",nl,nw,nc);
 }

@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//统计输入的行数
 int main()
 {
     int c,nl;
