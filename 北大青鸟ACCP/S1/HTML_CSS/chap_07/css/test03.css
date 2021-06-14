@@ -46,3 +46,9 @@ h1{
     float: left;
     text-decoration: none;
 }
+.foot p span{
+    float: right;
+    color: #909192;
+    margin: 10px;
+    font-size: 15px;
+}
