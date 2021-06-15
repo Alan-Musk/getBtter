@@ -35,14 +35,14 @@ int main(void)
 int getline(char s[], int lim) {
     int c, i,j;
 
+    j=0;
     //防止数组越界,长度是1000,最多s[999]
-    for (i = 0; i <(c = getchar()) != EOF && c != '\n'; ++i) {
+    for (i = 0;(c = getchar()) != EOF && c != '\n'; ++i) {
         if(i<lim-2){
             s[j]=c;
             ++j;
         }
     }
-    //判断有没有\n
     if (c == '\n') {
         s[j] = c;
        //测试 printf("1");
