@@ -8,5 +8,5 @@ ul li{
     list-style-type: none;
 }
 li:hover{
-    transform: rotate(360deg)scale(1.5);
+    transform: rotate(360deg) scale(1.5);
 }
