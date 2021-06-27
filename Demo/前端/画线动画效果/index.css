@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    /* 元素在侧轴居中。如果元素在侧轴上的高度高于其容器，那么在两个方向上溢出距离相同。 */
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-size: 60px;
+    width: 220px;
+    line-height: 1em;
+    /* 字距 */
+    letter-spacing: -0.03em;
+    position: relative;  
+}
+
+h1 svg{
+    position: absolute;
+    bottom: -10px;
+    left: 0px;
+    z-index: -1;
+}
+#tick{
+    /* 将线条变为虚线,每段虚线30px */
+    stroke-dasharray: 210px;
+    /* 设置虚线起点的位移 */
+    stroke-dashoffset: 210px;
+    /* infinite 重复动画 */
+    animation: 3s tick ease-in-out infinite;
+}
+@keyframes tick {
+    0%,50%{
+        stroke-dashoffset: 210px;
+    }
+    50%,100%{
+        stroke-dashoffset: 0px;
+    }
+}
