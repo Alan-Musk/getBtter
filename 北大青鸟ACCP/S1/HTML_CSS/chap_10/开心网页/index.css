@@ -1,0 +1,169 @@
+/* 全局属性 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+h1 a{
+    font-size: 16px;
+    color: red;
+}
+/* 导航 */
+header{
+    height: 50px;
+    background: linear-gradient(to bottom, #FF512F, #F09819);
+    width: 1150px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+header ul li{
+    display: inline-block;
+}
+.nav_first li:nth-child(2){
+    width: 100px;
+    padding-top: 15px;
+    background: white;
+    border-radius: 10px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.nav_first li:nth-child(2) a{
+    position: relative;
+    top: -9px;
+    display: inline-block;
+    color: red;
+    margin-top: -20px;
+}
+/* 右侧导航 */
+.nav_second{
+    color: white;
+    position: relative;
+    top: -50px;
+    left: 910px;
+}
+.nav_second a{
+    color: white;
+}
+.nav_second a:hover{
+    text-decoration: underline;
+}
+.nav_second li{
+    margin: 8px;
+}
+/* 中间主体 */
+article{
+    width: 1150px;
+    margin: 20px auto;
+}
+.gameLeft{
+    width: 880px;
+}
+/* 排行? */
+.title{
+    border: 1px solid gray;
+    width: 190px;
+    border-radius: 10px;
+}
+.title ul li{
+    text-indent: 0.5em;
+    background: url(images/游戏列表灰色渐变.jpg) no-repeat 0px 0px;
+}
+.title ul li:hover{
+    background: red;
+    background: url(images/游戏列表鼠标移入的渐变.jpg) no-repeat 0px 0;
+}
+.title ul li a img{
+    position: relative;
+    left: -8px;
+    top: 4px;
+}
+.title ul li a{
+    display: inline-block;
+    width: 190px;
+}
+/* 轮播图 */
+.banner{
+    width: 300px;
+    position: relative;
+    top: -180px;
+    left: 210px;
+}
+.banner a img{
+    border-radius: 10px;
+    height: 180px;
+}
+.banner a ul li{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: gray;
+    text-align: center;
+    position: relative;
+    left: 330px;
+    margin-left: 5px;
+    top: -35px;
+}
+.banner a ul li:hover{
+    background: red;
+    color: white;
+}
+.banner a ul li:nth-child(1){
+    background: red;
+    color: white;
+}
+/* 全部游戏 */
+.game{
+    width: 690px;
+    border: 1px solid #7b8c7c;
+    border-radius: 10px;
+}
+.first{
+    margin-top: -180px;
+    text-indent: 0.5em
+}
+.top{
+    position: relative;
+    line-height: 30px;
+    background: linear-gradient(to left, #757F9A, #D7DDE8);
+    border-radius: 10px 10px 0 0;
+    color: #343724;
+}
+.top h1{
+    font-size: 16px;
+    display: inline-block;
+}
+.top ul{
+    position: absolute;
+    left: 170px;
+    top: 0px;
+}
+.top ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.child{
+    width: 300px;
+    border: 1px solid #6f847d;
+}
+.left-img,.right-title{
+    margin-top: 10px;
+    display: inline-block;
+}
+.child .left-img a img{
+    width: 100px;
+}
+.right-title{
+    display: inline-block;
+}
+.games{
+    padding: 10px;
+}
